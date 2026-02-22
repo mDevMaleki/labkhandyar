@@ -1,0 +1,55 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "مشاوره دندانپزشکی";
+}
+
+<section class="hero">
+    <div class="container hero-grid">
+        <div>
+            <h1>مشاوره دندانپزشکی آنلاین با لبخند یار</h1>
+            <p>
+                هر زمان که درباره درد دندان، ارتودنسی، زیبایی لبخند یا مراقبت‌های روزانه سؤال دارید،
+                تیم متخصص لبخند یار کنار شماست.
+            </p>
+            <div class="actions">
+                <a class="btn btn-primary" href="#form">شروع مشاوره</a>
+                <a class="btn btn-outline" href="tel:+982100000000">تماس فوری</a>
+            </div>
+        </div>
+        <div class="card">
+            <h2>چرا لبخند یار؟</h2>
+            <ul>
+                <li>پاسخگویی سریع توسط دندانپزشک</li>
+                <li>ارائه راهکار اولیه قبل از مراجعه حضوری</li>
+                <li>مشاوره برای کودکان و بزرگسالان</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="form" class="consultation">
+    <div class="container">
+        <h2>فرم درخواست مشاوره</h2>
+        <form class="consultation-form">
+            <label>نام و نام خانوادگی
+                <input type="text" placeholder="مثلاً: نگار احمدی" />
+            </label>
+            <label>شماره تماس
+                <input type="tel" placeholder="09xxxxxxxxx" />
+            </label>
+            <label>موضوع مشاوره
+                <select>
+                    <option>درد دندان</option>
+                    <option>ارتودنسی</option>
+                    <option>بلیچینگ و زیبایی</option>
+                    <option>جرم‌گیری و بهداشت</option>
+                </select>
+            </label>
+            <label>توضیحات
+                <textarea rows="4" placeholder="مشکل خود را کوتاه توضیح دهید..."></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">ارسال درخواست</button>
+        </form>
+    </div>
+</section>
